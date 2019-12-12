@@ -9,7 +9,7 @@ namespace Dapper_Demo.Controllers
     [ApiController]
     public class EmpController : ControllerBase
     {
-        //IEmpManager _empManager;
+      
         IEmpRepository<Emp> _empRepository;
         public EmpController(IEmpRepository<Emp> empRepository)
 
