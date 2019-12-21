@@ -1,3 +1,4 @@
+using Dapper_Demo.Extensions;
 using DataManagement.Repository.Interfaces;
 using EmpManagement.Repository;
 using Microsoft.AspNetCore.Builder;
@@ -22,7 +23,7 @@ namespace Dapper_Demo
         {
             services.AddControllers();
             services.AddTransient(typeof(IEmpRepository<>), typeof(EmpRepository<>));
-
+            services.AddSwagger();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -32,7 +33,7 @@ namespace Dapper_Demo
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.AddCustomSwagger();
             app.UseHttpsRedirection();
 
             app.UseRouting();
