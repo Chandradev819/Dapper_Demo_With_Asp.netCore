@@ -40,7 +40,7 @@ namespace Dapper_Demo.Controllers
 
         // PUT: api/Emp/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] Emp emp)
+        public void Put([FromBody] Emp emp)
         {
             _empRepository.UpdateEmp(emp);
         }
