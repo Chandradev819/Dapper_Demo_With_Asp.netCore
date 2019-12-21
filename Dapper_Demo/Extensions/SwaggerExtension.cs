@@ -11,7 +11,7 @@ namespace Dapper_Demo.Extensions
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "EmpManagement API", Version = "v1" });
             });
         }
 
