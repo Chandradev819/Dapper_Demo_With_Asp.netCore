@@ -9,5 +9,9 @@ namespace DataManagement.Entities
         public string EmpAddress { get; set; }
         public string EmailId { get; set; }
         public string MobileNum { get; set; }
+        public string Country { get; set; }
+        public string State { get; set; }
+        public string City { get; set; }
+        public string Image { get; set; }
     }
 }
